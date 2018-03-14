@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="weui-cells">
-        <router-link class="weui-cell weui-cell_access" to="/">
+        <router-link class="weui-cell weui-cell_access" to="/detailsList">
             <div class="weui-cell__bd">
                 <p>功能类应用指导</p>
             </div>

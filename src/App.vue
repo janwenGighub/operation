@@ -3,7 +3,7 @@
     <router-view/>
     <!-- tabbar star -->
     <div class="weui-tabbar">
-        <router-link to="" class="weui-tabbar__item weui-bar__item_on">
+        <router-link to="/" class="weui-tabbar__item weui-bar__item_on">
             <span style="display: inline-block;position: relative;">
                 <!-- <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span> -->
             </span>
