@@ -10,6 +10,8 @@ const Content = r => require.ensure([], () => r(require('../components/guide/Con
 const VideoList = r => require.ensure([], () => r(require('../components/video/VideoList')), 'videoList') // 视频公共列表组件
 const ClassifyList = r => require.ensure([], () => r(require('../components/video/ClassifyList')), 'classifyList') // 视频分类列表组件
 
+const Play = r => require.ensure([], () => r(require('../components/video/Play')), 'play') // 视频分类列表组件
+
 Vue.use(Router)
 
 export default new Router({
@@ -36,6 +38,10 @@ export default new Router({
   {
     path: '/videoList/classifyList',
     component: ClassifyList
+  }, // 视频分类列表组件
+  {
+    path: '/videoList/classifyList/play',
+    component: Play
   } // 视频分类列表组件
   ]
 })

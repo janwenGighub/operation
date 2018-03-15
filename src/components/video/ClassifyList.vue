@@ -20,7 +20,7 @@
     <div class="weui-panel weui-panel_access">
       <div class="weui-panel__hd">自然传奇</div>
       <div class="weui-panel__bd">
-        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <router-link to="/videoList/classifyList/play" class="weui-media-box weui-media-box_appmsg">
           <div class="weui-media-box__bd">
             <h4 class="weui-media-box__title">自然传奇</h4>
             <p class="weui-media-box__desc">
@@ -31,7 +31,7 @@
           <div class="weui-media-box__hd">
             <img class="weui-media-box__thumb" src="../../../static/img/大自然.jpg" alt="">
           </div>
-        </a>
+        </router-link>
         <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
           <div class="weui-media-box__bd">
             <h4 class="weui-media-box__title">自然传奇</h4>
