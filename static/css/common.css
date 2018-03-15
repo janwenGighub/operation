@@ -1,0 +1,48 @@
+html{
+    background-color: #f8f8f8;
+}
+body{
+  font-weight: lighter;
+}
+html,
+body,
+#app,
+.view-container {
+height: 100%;
+}
+.full-height{
+  height: 100%;
+}
+.padding-content{
+    padding-bottom: 55px;
+}
+.footer-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: #fcfcfc;
+}
+.button-spacing{
+    padding: 15px;
+}
+.page__bd {
+    font-size: 17px;
+}
+.weui-form-preview{
+    margin-bottom: 15px;
+}
+.weui-media-box__title{
+    color: #000;
+}
+.action-block{
+    font-size: 16px;
+}
+.image{
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+.weui-label,.weui-input,.weui-textarea,.weui-select{
+  font-size: 14px;
+  }

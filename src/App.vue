@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <router-view/>
+    <transition>
+      <router-view class="box"></router-view>
+    </transition>
     <!-- tabbar star -->
     <div class="weui-tabbar">
-        <router-link to="/" class="weui-tabbar__item weui-bar__item_on">
-            <span style="display: inline-block;position: relative;">
-                <!-- <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span> -->
-            </span>
-            <p class="weui-tabbar__label">操作指南</p>
-        </router-link>
-        <a to="" class="weui-tabbar__item">
-            <p class="weui-tabbar__label">视频</p>
-        </a>
+      <router-link to="/" class="weui-tabbar__item weui-bar__item_on">
+        <span style="display: inline-block;position: relative;">
+          <!-- <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span> -->
+        </span>
+        <p class="weui-tabbar__label">操作指南</p>
+      </router-link>
+      <a to="" class="weui-tabbar__item">
+        <p class="weui-tabbar__label">视频</p>
+      </a>
     </div>
     <!-- tabbar end -->
   </div>
@@ -24,18 +26,36 @@ export default {
 </script>
 
 <style>
-@import '../static/css/reset.css';
-.weui-tabbar{
+@import "../static/css/reset.css";
+@import "../static/css/weui.css";
+@import "../static/css/common.css";
+.box{
+  padding-bottom: 57px;;
+}
+.weui-tabbar {
   position: fixed;
 }
-.weui-tabbar__item{
+.weui-tabbar__item {
   padding: 0;
 }
-.weui-tabbar__label{
+.weui-tabbar__label {
   height: 57px;
   line-height: 57px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: black;
   font-weight: bolder;
+}
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: all .1s ease;
 }
 </style>
