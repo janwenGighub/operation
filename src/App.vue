@@ -11,9 +11,9 @@
         </span>
         <p class="weui-tabbar__label">操作指南</p>
       </router-link>
-      <a to="" class="weui-tabbar__item">
+      <router-link to="/videoList" class="weui-tabbar__item">
         <p class="weui-tabbar__label">视频</p>
-      </a>
+      </router-link>
     </div>
     <!-- tabbar end -->
   </div>
