@@ -2,12 +2,12 @@
   <div>
     <!-- 自然传奇分类   star -->
     <div class="weui-cells">
-      <a class="weui-cell weui-cell_access" href="javascript:;">
+      <router-link class="weui-cell weui-cell_access" to="/videoList/classifyList">
         <div class="weui-cell__bd">
           <p>自然传奇</p>
         </div>
         <div class="weui-cell__ft">更多</div>
-      </a>
+      </router-link>
       <!-- <a class="weui-cell weui-cell_access" href="javascript:;">
           <div class="weui-cell__bd">
               <p>cell standard</p>
